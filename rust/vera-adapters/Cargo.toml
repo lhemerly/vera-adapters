@@ -1,0 +1,35 @@
+[package]
+name = "vera-adapters"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "Exact JSON, CBOR and YAML transport adapters with optional VERA typed admission"
+repository = "https://github.com/lhemerly/vera-adapters"
+readme = "../../README.md"
+
+[features]
+default = ["json", "cbor", "yaml"]
+json = ["dep:serde", "dep:serde_json", "dep:serde_stacker"]
+cbor = ["dep:ciborium-ll", "dep:ciborium-io"]
+yaml = ["dep:saphyr-parser"]
+vera = ["dep:vera-compiler", "dep:serde_json"]
+
+[dependencies]
+num-bigint = "0.4"
+num-traits = "0.2"
+serde = { version = "1", optional = true }
+serde_json = { version = "1", features = ["arbitrary_precision", "raw_value", "unbounded_depth"], optional = true }
+serde_stacker = { version = "0.1", optional = true }
+ciborium-io = { version = "0.2.2", features = ["std"], optional = true }
+ciborium-ll = { version = "0.2.2", features = ["std"], optional = true }
+saphyr-parser = { version = "0.3.4", optional = true }
+vera-compiler = { git = "https://github.com/lhemerly/vera", rev = "e62e66e51332a3af53700f74e7799ea68b003e1d", optional = true }
+
+[[example]]
+name = "typed_pipeline"
+required-features = ["json", "yaml", "cbor", "vera"]
+
+[[example]]
+name = "python_bridge"
+required-features = ["json", "cbor", "yaml"]
