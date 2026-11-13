@@ -53,7 +53,7 @@ Read [FORMAT_ADAPTERS.md](docs/FORMAT_ADAPTERS.md) before replacing a parser. Th
 
 ## Optional VERA integration
 
-The `vera` feature adds typed admission through a pinned VERA compiler dependency. It pins public VERA revision `e62e66e51332a3af53700f74e7799ea68b003e1d` and requires [native Z3 setup from that revision](https://github.com/lhemerly/vera/blob/e62e66e51332a3af53700f74e7799ea68b003e1d/tools/setup_z3.sh). The default format-only build does not compile the compiler or need Z3. `typed_pipeline` demonstrates verified-core integration; admission alone does not prove initial state validity, authorization or business preconditions.
+The `vera` feature adds typed admission through a pinned VERA compiler dependency. It pins public VERA revision `25c2b6e211d9449d653ae2c345c482dd3de9c51b` and requires [native Z3 setup from that revision](https://github.com/lhemerly/vera/blob/25c2b6e211d9449d653ae2c345c482dd3de9c51b/tools/setup_z3.sh). The default format-only build does not compile the compiler or need Z3. `typed_pipeline` demonstrates verified-core integration; admission alone does not prove initial state validity, authorization or business preconditions.
 
 ## Development
 

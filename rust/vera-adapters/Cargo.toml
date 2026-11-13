@@ -24,7 +24,7 @@ serde_stacker = { version = "0.1", optional = true }
 ciborium-io = { version = "0.2.2", features = ["std"], optional = true }
 ciborium-ll = { version = "0.2.2", features = ["std"], optional = true }
 saphyr-parser = { version = "0.3.4", optional = true }
-vera-compiler = { git = "https://github.com/lhemerly/vera", rev = "e62e66e51332a3af53700f74e7799ea68b003e1d", optional = true }
+vera-compiler = { git = "https://github.com/lhemerly/vera", rev = "25c2b6e211d9449d653ae2c345c482dd3de9c51b", optional = true }
 
 [[example]]
 name = "typed_pipeline"

@@ -388,7 +388,7 @@ dependencies = [
 [[package]]
 name = "vera-compiler"
 version = "1.2.0"
-source = "git+https://github.com/lhemerly/vera?rev=e62e66e51332a3af53700f74e7799ea68b003e1d#e62e66e51332a3af53700f74e7799ea68b003e1d"
+source = "git+https://github.com/lhemerly/vera?rev=25c2b6e211d9449d653ae2c345c482dd3de9c51b#25c2b6e211d9449d653ae2c345c482dd3de9c51b"
 dependencies = [
  "num-bigint",
  "num-traits",
@@ -402,7 +402,7 @@ dependencies = [
 [[package]]
 name = "vera-rt"
 version = "1.1.0"
-source = "git+https://github.com/lhemerly/vera?rev=e62e66e51332a3af53700f74e7799ea68b003e1d#e62e66e51332a3af53700f74e7799ea68b003e1d"
+source = "git+https://github.com/lhemerly/vera?rev=25c2b6e211d9449d653ae2c345c482dd3de9c51b#25c2b6e211d9449d653ae2c345c482dd3de9c51b"
 dependencies = [
  "libc",
 ]
